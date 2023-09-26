@@ -1,0 +1,152 @@
+/* label at the top of the page  */
+.text-artigo{
+    padding-top: 20px;
+    max-width: 50%;
+    position: relative;
+    margin: auto;  
+}
+
+.pre-caption{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: solid 2px #5aaacf;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.pre-caption-item{
+    color: #333;
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.1875rem;
+    padding: 0 1px 2px;
+    text-transform: uppercase;
+}
+
+/* Article title */
+.caption{
+    color: #000;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -1.3px;
+    line-height: 3.0625rem;
+    margin-bottom: 15px;
+    text-align: left;
+    text-transform: none;
+}
+
+/* Resume below title */
+.post-caption{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: .1px;
+    line-height: 1.75rem;
+    margin-bottom: 27px;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+.pc{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Article body */
+.post-content-container{
+    color: #333;
+    font-size: 1.125rem;
+    letter-spacing: .1px;
+    line-height: 2rem;
+    margin-bottom: 25px;
+}
+/* adding style to text */
+em{
+    font-style: italic;
+}
+
+.post-content-container p strong{
+    font-weight: 600;
+}
+
+/* Especial section  */
+.post-content-container blockquote{
+    border-left: 4px solid #fcbf49;
+    font-size: 1.125rem;
+    letter-spacing: .1px;
+    line-height: 2rem;
+    margin: 30px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Image in article */
+.post-content-image img{
+    width: 320px;
+    height: 438px;
+    float: left;
+    margin: 0 40px 20px -70px;
+    padding-top: 8px;
+    position: relative;
+    border-radius: 2px;
+    display: block;
+    object-fit: cover;
+
+}
+
+/* image's description */
+.post-content-image .content-legend{
+    text-align: right;
+    padding-left: 25px;
+}
+
+.content-legend{
+    border-bottom: 1px solid rgba(179, 179, 179, .4);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: 15px 0;
+}
+
+figcaption {
+    display: block;
+}
+
+
+.main-artigo{
+    padding-top: 30px;
+    background-color: #d3d3d3;
+    max-width: 3400px;
+}
+
+img{
+    height: 260px;
+    width: 460px;
+}
+
+/* Mobile ----------------------------------------------------- */
+@media (max-width:1160px){
+
+    .text-artigo{
+        max-width: 700px;
+        position: relative;
+        margin: auto;  
+    }    
+}
+
+@media (max-width:860px){
+
+    .text-artigo{
+        max-width: 500px;
+        position: relative;
+        margin: auto;  
+    }
+}

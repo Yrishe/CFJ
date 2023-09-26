@@ -1,0 +1,225 @@
+/* Desktop version */
+/* Slides --------------------- */
+*{
+    box-sizing: border-box;
+}
+
+/* slide images */
+.slider_image{
+    opacity: 0.5;
+}
+
+/* Slideshow container */
+.slideshow-container{
+    max-width: 80%; 
+    height: 405px;
+    position: relative;
+    margin: auto;
+    background-color: #24262b;
+}
+
+/* Next & previous buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: auto;
+    user-select: none;
+}
+
+/* Position the next button to the right */
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Previous & Next buttons hover effect */
+.prev:hover , .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Title Caption  */
+.title-text{
+    font-family: aktiv-grotesk,-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+    transition: color .2s ease;
+    color: #f2f2f2;
+    display: block;
+    font-weight: 700;
+    letter-spacing: .2px;
+    line-height: 2.8125rem;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+    width: 100%;
+    font-size: 2.4rem;
+
+}
+
+/* Description */
+.text{
+    color: #d3d3d3;
+    font-size: 1.2em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 50%;
+    text-align: left;
+    left: 650px;
+    bottom: 100px;
+}
+
+/**************************** Article layout */
+
+h3 {
+    font-style: oblique;
+}
+
+/* article body */
+.main-artigo{
+    max-width: 80%;   
+    position: relative;
+    margin: auto;  
+}
+/* horizontal line */
+hr{
+    top: 60px;
+    border-top: 0.5px solid black;
+}
+
+/* image top label box  */
+.artigo-information-box{
+    width: 20%;
+    align-items: center;
+}
+
+/* image top date */
+.artigo-date{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.artigo-date::before{
+    content: ' | ';
+    display: inline-block;
+    margin: 10px;
+}
+
+/* image top label */
+.artigo-label{
+    color: #c9942b;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 10px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+/* individual article body */
+.bodyArticle {
+    height: 350px;
+    width: auto;
+    border-radius: 10px;
+    left: -100px;
+    padding-top: 10px;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+h3{
+    line-height: 40px;
+    font-style: oblique;
+}
+
+.art-img{
+    height: 300px;
+    width: 490px;
+    opacity: 0.9;
+    left: -30px;
+    border-radius: 10px;
+    padding-right: 20px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.content{
+    text-align: justify;
+}
+
+/* Large laptop */
+@media screen and (max-width: 2190px) {
+    .main-artigo, .slideshow-container{
+        max-width: 80%;   
+        position: relative;
+        margin: auto;  
+    }
+}
+
+/* Medium laptop */
+@media screen and (max-width: 1800px) {
+
+    .title-text{
+        width: 140%;
+        right: 0;
+        position: relative;
+    }
+
+    .text{
+        left: 10%;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1466px) {
+    .main-artigo, .slideshow-container{
+        max-width: 80%;  
+        position: relative;
+    }
+
+    .main-artigo{
+        padding-bottom: 160px;
+    }
+}
+
+
+@media (max-width: 1293px) {
+
+    .bodyArticle{
+        height: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 912px){
+
+    .main-artigo{
+        max-width: 80%;
+        right: 10px;
+    }
+
+    .slider_image{
+        right: 8%;
+    }
+
+    .slideshow-container{
+        max-width: 100%;
+    }
+
+    .art-img{
+        display: none;
+    }
+
+    .title-text{
+        font-size: 1.5rem;
+    }
+
+    .text{
+        width: 400px;
+        top: 90px;
+    }
+}
+

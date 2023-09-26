@@ -1,0 +1,216 @@
+/* Fonts imported from online sources */
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Fira+Sans&family=Oxygen&family=Roboto&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Oxygen&family=Roboto&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* General */
+body {
+    background-color:whitesmoke;
+    font-family: 'Fira Sans', sans-serif, 'Cantarell', sans-serif,'Oxygen', sans-serif, 'Ubuntu', sans-serif, 'Roboto', sans-serif;
+}
+
+
+/************************** Navbar */
+/* Desktop version */
+.navbar {
+    display: flex;
+    padding: 16px;
+    background-color: black;
+}
+
+.navbar-items {
+    display: flex;
+}
+
+.navbar-main {
+    padding-right: 20px;
+}
+
+.navbar-items-right {
+    margin-left: auto;
+}
+
+.icon {
+    display: none;
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #eee;
+    text-decoration: none;
+}
+
+.navbar-main a:hover{
+    padding-left: 10px;
+    transition: all 0.5s ease;
+    color: #ffffff;
+}
+
+.navbar-items-right:hover{
+    padding-right: 10px;
+    transition: all 0.5s ease;
+    color: #ffffff;
+}
+
+.navbar-main:hover, a:hover {
+    color:#01447e;
+}
+
+.navbar-main-brand {
+    font-weight: 700;
+}
+
+/********************** Navbar */
+/* Tablet */
+@media (max-width: 1466px){
+    .navbar, .footer{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 912px){
+    .navbar-items,
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-items-right {
+        margin-left: 0;
+        padding-top: 10px;
+    }
+
+    .navbar-items {
+        display: none;
+    }
+
+    .navbar-ToggleShow {
+        display: flex;
+    }
+
+    .icon {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .icon:hover{
+        color: #ffffff;
+    }
+
+}
+
+/************************* Footer */
+/* Desktop version */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: black;
+    padding: 70px 0;
+} 
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #eee;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #01447e;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 5px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/**************** Tablet version */
+
+@media (max-width: 912px){
+
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+
+    .footer-col{
+        width: 100%;
+    }
+}

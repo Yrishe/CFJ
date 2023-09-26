@@ -1,0 +1,185 @@
+/* Desktop version */
+/* Slides --------------------- */
+.fade img{
+    opacity: .5;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container{
+    max-width: 80%;
+    height: 405px;
+    position: relative;
+    margin: auto;
+    background-color: #24262b;
+}
+
+/* Next & previous buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: auto;
+    user-select: none;
+}
+
+/* Position the next button to the right */
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Previous & Next buttons hover effect */
+.prev:hover , .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* text upon slides */
+.text{
+    font-family: aktiv-grotesk,-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;;
+    color: #d3d3d3;
+    transition: color .2s ease;
+    font-weight: 700;
+    font-size: 2.4em;
+    position: absolute;
+    width: 80%;
+    left: 100px;
+    bottom: 100px;
+}
+
+/************************ Article */
+/* Styling text */
+
+.post-content-container{
+    color: #333;
+    font-size: 1.125rem;
+    letter-spacing: .1px;
+    line-height: 2rem;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+em{
+    font-style: italic;
+}
+
+.post-content-container p strong{
+    font-weight: 600;
+}
+
+.post-content-container blockquote{
+    border-left: 4px solid #fcbf49;
+    font-size: 1.125rem;
+    letter-spacing: .1px;
+    line-height: 2rem;
+    margin: 30px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.post-content-image img{
+    width: 320px;
+    height: 438px;
+    float: left;
+    margin: 0 40px 20px -70px;
+    padding-top: 8px;
+    position: relative;
+    border-radius: 2px;
+    display: block;
+    object-fit: cover;
+
+}
+
+.post-content-image .content-legend{
+    text-align: right;
+    padding-left: 25px;
+}
+
+.content-legend{
+    border-bottom: 1px solid rgba(179, 179, 179, .4);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: 15px 0;
+}
+
+figcaption {
+    display: block;
+}
+
+
+.post-content-container{
+    max-width: 70%;
+    position: relative;
+    margin: auto; 
+}
+
+/* Reference */
+.post-references-title{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 25px;
+    padding-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+.post-references{
+    padding-top: 40px;
+}
+
+.post-references ol{
+    font-size: 1rem;
+    line-height: 1.625rem;
+    list-style-position: inside;
+}
+
+.post-references li{
+    padding-bottom: 30px;
+}
+
+/*----------------------- Laptop */
+
+@media screen and (max-width: 1800px) {
+    .slideshow-container{
+        max-width: 80%;   
+        position: relative;
+        margin: auto;  
+    }
+
+    .post-content-container{
+        max-width: 80%;
+        position: relative;
+        margin: auto; 
+    }
+}
+
+/*--------------------------- Tablet */
+
+@media screen and (max-width: 1466px) {
+
+    .post-content-container{
+        max-width: 78%;
+    }
+}
+
+
+@media screen and (max-width: 1293px) {
+    .post-content-container{
+        max-width: 80%;
+    }
+}
+
+/* ---------------------------Mobile */
+@media (max-width: 912px){
+    
+    .slideshow-container{
+        right: 8%;
+    }
+}

@@ -1,0 +1,121 @@
+/* Desktop version */
+
+/* This is where I present myself */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+picture img {
+    width: 300px;
+    border-radius: 50%;
+    height: 300px;
+    border: #24262b 1px solid;
+}
+
+.mensagem{
+    width: 90%;
+    padding-bottom: 40px;
+}
+
+/* Feedback section  */
+.comment-box{
+    padding-top: 200px;
+    padding-bottom: 600px;
+    padding-left: 35%;
+    padding-right: 300px;
+    position: relative;
+    width: 100%;
+}
+
+.comment-box h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.comment-box input{
+    width: 94.5%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+
+.comment-box input:focus {
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.comment-box textarea {
+    width: 94.5%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+
+.comment-box textarea:focus {
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.comment-box button {
+    border: 0;
+    padding: 10px 70px;
+    background-color: #24262b;
+    font: 18px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.comment-box button:hover{ 
+    background-color: rgba(36, 38, 43, .7) ;
+}
+
+/* -------------------- Laptop */
+@media (max-width: 1725px){
+
+    .comment-box{
+        padding-left: 400px;
+    }
+}
+
+/* ---------------------- Tablet */
+@media (max-width: 1226px){
+
+    .mensagem{
+        width: 100%;
+    }
+
+    .comment-box{
+        padding-left: 200px;
+    }
+}
+
+@media (max-width: 1044px){
+    .comment-box{
+        padding-left: 150px;
+    }
+}
+
+/* --------------------- Mobile */
+@media (max-width: 978px){
+
+    .mensagem{
+        width: 150%;
+    }
+    
+    .comment-box{
+        padding-left: 120px;
+    }
+
+    .comment-box input{
+        width: 500px;
+    }
+
+    .comment-box textarea {
+        width: 500px;
+    }
+}

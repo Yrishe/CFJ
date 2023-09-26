@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- specifies the character encoding for the HTML doc -->
+    <!-- Title displayed in the tab on browser -->
+    <title>Catholic For Jesus</title>
+    <!-- Short description of the page -->
+    <meta name="description" content="this is a website for catholic people that have insterest to
+        learn more about Catholic doutrine and history">
+    <!-- Minimum screen size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Author -->
+    <meta name="author" content="Yarli Rabelo">
+    <!-- Keyowrds to help ranking page in the browsers search -->
+    <meta name="keyword" content="Lord Jesus Christians Catholic">
+    <!-- Refreshing page at every 1 minute -->
+    <meta name="refresh" content="60000">
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/common.css">
+    <!-- Links for retrieving icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar" id="navMain">
+        <!-- Brand logo -->
+        <div class="navbar-main navbar-main-brand">
+            <a href="index.html">CFJ</a>
+        </div>
+        <!-- hamburguer icon -->
+        <!-- it is only used by small screens -->
+        <a class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- Options found on the right size of navbar -->
+        <nav class="navbar-items navbar-items-right">
+            <div class="navbar-main"><a href="index.html">Home</a></div>
+            <div class="navbar-main"><a href="facts.html">Saints</a></div>
+            <div class="navbar-main"><a href="mary.html">Virgin Mary</a></div>
+            <div class="navbar-main"><a href="questions.html">Quiz</a></div>
+            <div class="navbar-main"><a href="contact.html">Contact</a></div>
+        </nav>
+    </div>
+
+    <!-- slide -->
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="mySlides fade">
+            <!-- Using handlebars to input the data -->
+            <div class="slide-output1"></div>
+            <script id="slide-1" type="text/x-handlebars-template">
+            <!-- Image from slide -->
+            <a href="mary.html">
+                <img class="slider_image" src="{{src}}" alt="jesus on the cross">
+            </a>
+            <!-- Text displayed on slide -->
+                <div class="text">
+                    <p class="title-text">
+                        {{title1}}
+                    </p>
+                    <p>{{slide1}}</p>
+                </div>
+            </script>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides fade">
+            <!-- Using handlebars to input the data -->
+            <div class="slide-output2"></div>
+            <script id="slide-2" type="text/x-handlebars-template">
+            <!-- Image from slide -->
+            <a href="mary.html">
+                <img class="slider_image" src="{{src}}" alt="mary holding jesus dead">
+            </a>
+            <!-- Text displayed on slide -->
+                <div class="text">
+                    <p class="title-text">
+                        {{title2}}
+                    </p>
+                    <p>
+                        {{slide2}}
+                    </p>
+                </div>
+            </script>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="mySlides fade">
+            <!-- Using handlebars to input the data -->
+            <div class="slide-output3"></div>
+            <script id="slide-3" type="text/x-handlebars-template">
+            <!-- Image from slide -->
+            <a href="questions.html">
+                <img class="slider_image" src="{{src}}" alt="Espiritualidade">
+            </a>
+            <!-- Text displayed on slide -->
+                <div class="text">
+                    <p class="title-text">
+                        {{title3}}
+                    </p>
+                    <p>
+                        {{slide3}}
+                    </p>
+                </div>
+            </script>
+        </div>
+        
+        <!-- Next buttons -->
+        <!-- left button on slide -->
+        <a class="prev">&#10094;</a>
+        <!-- right button on slide -->
+        <a class="next">&#10095;</a>
+    </div>
+
+    <br>
+
+    <!-- Articles -->
+    <article class="main-artigo">
+        <!-- Section Title -->
+        <h2>Articles</h2>
+        <hr>
+
+        <!-- Using handlebars to input the data -->
+        <div class="articleBody0"></div>
+        <script id="articleContent0" type="text/x-handlebars-template">
+            <div class="bodyArticle">
+                <!-- Top description -->
+                <div class="artigo-information-box">
+                    <div class="artigo-label">{{artTitle}}</div>
+                    <div class="artigo-date">
+                        {{date}}
+                    </div>
+                </div>
+                <!-- Image with link -->
+                <a href="questions.html">
+                    <picture>
+                        <img class="art-img" src="{{src}}" alt="cateques em familia">
+                    </picture>
+                </a>
+                <!-- Content displayed on the right side of the first picture -->
+                <div class="content">
+                    <h3>{{h3}}</h3>
+                    <p>
+                        {{content}}
+                    </p>
+                </div>
+            </div>
+        </script>
+
+        <hr>
+
+        <!-- Using handlebars to input the data -->
+        <div class="articleBody1"></div>
+        <script id="articleContent1" type="text/x-handlebars-template">
+            <div class="bodyArticle">
+                <!-- Top description -->
+                <div class="artigo-information-box">
+                    <div class="artigo-label">{{artTitle}}</div>
+                    <div class="artigo-date">
+                        {{date}}
+                    </div>
+                </div>
+                <!-- Image with link -->
+                <a href="questions.html">
+                    <picture>
+                        <img class="art-img" src="{{src}}" alt="cateques em familia">
+                    </picture>
+                </a>
+                <!-- Content displayed on the right side of the first picture -->
+                <div class="content">
+                    <h3>{{h3}}</h3>
+                    <p>
+                        {{content}}
+                    </p>
+                </div>
+            </div>
+        </script>
+
+        <hr>
+        <!-- Using handlebars to input the data -->
+        <div class="articleBody2"></div>
+        <script id="articleContent2" type="text/x-handlebars-template">
+            <div class="bodyArticle">
+                <!-- Top description -->
+                <div class="artigo-information-box">
+                    <div class="artigo-label">{{artTitle}}</div>
+                    <div class="artigo-date">
+                        {{date}}
+                    </div>
+                </div>
+                <!-- Image with link -->
+                <a href="facts.html">
+                    <picture>
+                        <img class="art-img" src="{{src}}" alt="cateques em familia">
+                    </picture>
+                </a>
+                <!-- Content displayed on the right side of the first picture -->
+                <div class="content">
+                    <h3>{{h3}}</h3>
+                    <p>
+                        {{content}}
+                    </p>
+                </div>
+            </div>
+        </script>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Left hand side on footer -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="docs/report.html">About us (Report)</a></li>
+                        <li><a href="mary.html">Lady Mary</a></li>
+                        <li><a href="questions.html">Quiz</a></li>
+                        <li><a href="facts.html">Histories</a></li>
+                    </ul>
+                </div>
+                <!-- Middle of the footer -->
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contributers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Right hand side of the footer -->
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a title="link" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a title="link" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a title="link" href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                        <a title="link" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a title="link" href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Calling JavaScript on the page -->
+    <script src="DOM/main.js"></script>
+    <script src="DOM/index.js"></script>
+    <script src="DOM/gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</body>
+</html>

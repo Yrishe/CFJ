@@ -1,0 +1,122 @@
+/* General font family */
+*{
+    font-family: aktiv-grotesk,-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+}
+
+/* cards' images */
+img{
+    height: 340px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* text displayed over images */
+.over{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* when mouse over change cards' background color */
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #24262b;
+    border-radius: 10px;
+}
+
+/* mouse over effect */
+.grid-item:hover .overlay{
+    opacity: 1;
+}
+/* reduce image's brightness on mouse over */
+.overlay img{
+    opacity: .5;
+}
+
+/* when mouse over display answer text */
+.text{
+    color: #eee;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 80%;
+    width: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Top body title */
+.body-title{
+    padding: 30px;
+    top: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.8em;
+    width: 100%;
+}
+
+/* grids organised */
+.grid-container {
+    display: grid;
+    padding: 30px 20px 60px 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+}
+
+/* individual grids */
+.grid-item {
+    border: #01447e solid 1px;
+    padding: 10px;
+    font-size: 100px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+
+/* Tablet ----------------------------------------------------- */
+@media (max-width: 1536px){
+
+    .grid-container {
+        padding: 0 20px 60px 20px;
+        grid-template-columns: auto auto;
+    }
+
+}
+
+/* Mobile ----------------------------------------------------- */
+
+@media (max-width: 949px){
+    .over{
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 850px){
+
+    .grid-container {
+        padding: 0 20px 0 20px;
+        grid-template-columns: auto;
+        padding-bottom: 60px;
+    }
+
+    .grid-item{
+        width: 650px;
+        height: 300px;
+    }
+
+    img{
+        display: none;
+    }
+
+}
